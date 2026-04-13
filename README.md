@@ -1,1 +1,1 @@
-# peer-frontend
+# peer-hub-frontend
