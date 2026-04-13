@@ -118,7 +118,7 @@ function Blogs() {
         <div className="blog-section py-14">
             <h2 className="text-center text-5xl font-bold mb-14"> <span className='text-blue-400'>Peer Project Hub</span> </h2>
 
-            /* Blog creation form */
+            {/* Blog creation form */}
             {admin?
             <div className="blog-creation-form mb-8" style={{ width: "80%", margin: "auto" }}>
                 <form onSubmit={handleNewBlogSubmit} className="flex flex-col gap-4">
