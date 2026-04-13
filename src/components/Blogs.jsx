@@ -11,7 +11,7 @@ function Blogs() {
 
     const [blogs, setBlogs] = useState([]);
     // const [log, setLog] = useState("")
-    const [admin, setAdmin] = useState(false)
+    // const [admin, setAdmin] = useState(false)
 
     useEffect(()=> 
     {
@@ -26,12 +26,12 @@ function Blogs() {
            if(user.uid === "RSxl9wcjWPX3IhmfNjgx9ryivXi2")
            {
              console.log("he is Admin")
-             setAdmin(true)
+            //  setAdmin(true)
            }
            else
            {
              console.log("Not an Admin")
-             setAdmin(false)
+            //  setAdmin(false)
            }
          }
          else
@@ -119,7 +119,7 @@ function Blogs() {
             <h2 className="text-center text-5xl font-bold mb-14"> <span className='text-blue-400'>Peer Project Hub</span> </h2>
 
             {/* Blog creation form */}
-            {admin?
+            {/* {admin? */}
             <div className="blog-creation-form mb-8" style={{ width: "80%", margin: "auto" }}>
                 <form onSubmit={handleNewBlogSubmit} className="flex flex-col gap-4">
                     <input
@@ -143,9 +143,9 @@ function Blogs() {
                     </button>
                 </form>
             </div> 
-             :
-            ""  
-             }
+             {/* : */}
+            {/* ""   */}
+             {/* } */}
 
             <div className="blogs-container grid grid-cols-1 md:grid-cols-2 gap-6 container mx-auto px-4">
                 {blogs.map((blog) => (
